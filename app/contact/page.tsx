@@ -107,13 +107,19 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-slate-200 rounded-3xl overflow-hidden h-64 relative border border-slate-300">
-              <div className="absolute inset-0 flex items-center justify-center flex-col text-slate-500">
-                <MapPin className="w-10 h-10 mb-2" />
-                <p className="font-medium">Google Maps Integration</p>
-                <p className="text-sm">42 Oludegun Avenue, Lagos</p>
-              </div>
+            {/* Embedded Google Map */}
+            <div className="bg-slate-200 rounded-3xl overflow-hidden h-80 relative border border-slate-300 shadow-sm">
+              <iframe
+                src="https://maps.google.com/maps?q=42%20Oludegun%20Avenue,%20Ire-Akari%20Estate%20Rd,%20Oshodi-Isolo,%20Lagos&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+                title="Healing Touch Hospital Location"
+              ></iframe>
             </div>
           </div>
 
